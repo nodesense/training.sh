@@ -28,6 +28,8 @@ exports.createPages = ({ graphql, actions }) => {
   console.log("CREATE PAGES")
   const { createPage } = actions;
 
+  config.siteMetadata.courses = [];
+
   return new Promise(resolve => {
     graphql(`
       {
@@ -70,9 +72,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         let [courseDirectoryName, sectionDirectoryName, topicDirectoryName] = stripPaths;
         console.log("PATH****", stripPaths);
-
-          
-
+ 
         if (tokens.length >= 2) {
           // let courseName = tokens[0]
           // let sectionName = tokens[1]
@@ -88,8 +88,7 @@ exports.createPages = ({ graphql, actions }) => {
            
               course = yaml.safeLoad(fs.readFileSync(`./content/${courseName}/course.yml`, 'utf8'));
               console.log("**", course);
-             
-             
+ 
               course.sections = course.sections || []
               course.topics = course.topics || []
               courses.push(course)

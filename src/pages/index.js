@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 import Helmet from 'react-helmet';
 
-const siteOutline = require('../../content/site-outline.json');
-
 import {
   color,
   typography,
