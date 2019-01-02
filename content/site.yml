@@ -1,0 +1,10 @@
+---
+name: angular.training.sh
+hostName: angular.training.sh
+title: Angular Training
+description: Learn to build Angular Applications with Best Practices
+permalink: 'http://angular.training.sh'
+siteUrl: 'http://angular.training.sh'
+introduction: |
+          Learn Angular from scratch, from fundamentals to advanced concepts through blog, tutorials, articles, code and video contents
+          Angular, RXJS, ngrx, Karma/Jasmine
