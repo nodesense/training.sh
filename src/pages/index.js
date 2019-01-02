@@ -3,6 +3,13 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 import Helmet from 'react-helmet';
 
+import { graphql } from 'gatsby'; <link
+        rel="shortcut icon"
+        type="image/png"
+        href="/icon-learnstorybook.png"
+        sizes="16x16 32x32 64x64"
+      />
+
 import {
   color,
   typography,
@@ -69,6 +76,14 @@ let routes = location.pathname
         },
       ]}
     >
+
+      <link
+        rel="shortcut icon"
+        type="image/png"
+        href="/icons8-logo.png"
+        sizes="16x16 32x32 64x64"
+      />
+
       </Helmet>
 
         <Content>
@@ -95,16 +110,7 @@ let routes = location.pathname
  
 
         <Sections course={course} data={data} />
-  
- 
-        <CTA
-          text={`Let's learn ${course.title}!`}
-          action={
-            <Link isGatsby to={firstTopic.path}>
-              <Button primary>Start tutorial</Button>
-            </Link>
-          }
-        />
+   
       </FAQLayout>
     </div>
   );

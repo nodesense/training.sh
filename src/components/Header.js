@@ -97,8 +97,8 @@ export default function Header({ githubUrl, inverse, ...props }) {
         <NavGroup>
           <NavItem>
             <NavLink to="/">
-              {/* <LogoWrapper inverse={inverse} /> */}
-              <h2>NodeSense.Training</h2>
+              <LogoWrapper inverse={inverse} />
+              {/* <h2>TRAINING.SH</h2> */}
             </NavLink>
           </NavItem>
         </NavGroup>

@@ -8,6 +8,6 @@ const Svg = styled.svg`
 
 export default function Logo({ ...props }) {
   return (
-    <span>NodeSense.Training</span>
+    <span>TRAINING.SH</span>
   );
 }

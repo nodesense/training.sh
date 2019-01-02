@@ -5,8 +5,8 @@ const fs   = require('fs');
 let site = {
   title: 'training.sh',
   description: 'Learning technology',
-  permalink: 'http://nodesense.training',
-  siteUrl: 'http://nodesense.ai',
+  permalink: 'http://training.sh',
+  siteUrl: 'http://training.sh',
 }
 
 try {
@@ -87,7 +87,8 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+       // icon: `content/assets/gatsby-icon.png`,
+        icon: `static/icons8-logo.png`,
       },
     },
    // `gatsby-transformer-remark`,

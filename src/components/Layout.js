@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled, { css } from 'styled-components';
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 
-import { injectGlobalStyles } from '../components/shared/global';
+import { injectGlobalStyles } from './shared/global';
 
 injectGlobalStyles();
 
@@ -55,12 +55,11 @@ const TemplateWrapper = ({ data, children, location }) => (
     <HeaderWrapper
       title={data?data.site.siteMetadata.title: ''}
       githubUrl={data?data.site.siteMetadata.githubUrl: 'https://github.com/nodesense/react-workshop'}
-      inverse={location.pathname === '/'}
-      home={location.pathname === '/'}
-    />
-
+      inverse={location && location.pathname === '/'}
+      home={location && location.pathname === '/'}
+    /> 
       
-    <div>{children()}</div>
+    <div>{children}</div>
 
 
     <Footer />
@@ -72,16 +71,3 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
-
-export const query = graphql`
-  query TemplateWrapper {
-    site {
-      siteMetadata {
-        title
-        description
-        githubUrl
-        permalink
-      }
-    }
-  }
-`;

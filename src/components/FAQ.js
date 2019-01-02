@@ -28,7 +28,9 @@ const Footer = ({ ...props }) => (
      
     Made by{' '}
     <FooterLink className="secondary" href="https://blog.hichroma.com" target="_blank">
-      NodeSense.Training
+    <a href="https://nodesense.ai">
+      NodeSense.AI
+    </a>
     </FooterLink>{' '}
     and <a href="https://in.linkedin.com/in/gopalakrishnansubramani">Gopalakrishnan Subramani</a>
   </FooterWrapper>

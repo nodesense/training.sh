@@ -8,7 +8,10 @@ import CTA from '../components/CTA';
 import Button from '../components/Button';
 import Subheading from '../components/Subheading';
 import LogoTwitter from '../components/LogoTwitter';
- 
+import { graphql } from 'gatsby';
+
+import Layout from '../components/Layout';
+
 import {
   color,
   formatting,
@@ -233,11 +236,20 @@ export default ({ data, location }) => {
   console.log("Next topic is ", topicIndex, nextTopic);
 
   return (
+    <Layout>
     <DocsWrapper>
       <Helmet
         title={`${title} | ${data.site.siteMetadata.title}`}
         meta={[{ name: 'description', content: description }]}
-      />
+      >
+
+      <link
+              rel="shortcut icon"
+              type="image/png"
+              href="/icons8-logo.png"
+              sizes="16x16 32x32 64x64"
+            />
+      </Helmet>
       <Sidebar>
         <Heading>Table of Contents</Heading>
         <DocsList>
@@ -281,6 +293,7 @@ export default ({ data, location }) => {
 
       </Content>
     </DocsWrapper>
+    </Layout>
   );
 };
 
