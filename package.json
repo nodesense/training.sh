@@ -1,6 +1,6 @@
 {
-  "name": "nodesense.ai",
-  "description": "NodeSense.AI",
+  "name": "training.sh",
+  "description": "Training.SH website",
   "version": "1.0.0",
   "author": "Gopalakrishnan Subramani",
   "dependencies": {

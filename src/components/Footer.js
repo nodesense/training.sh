@@ -25,13 +25,13 @@ const Logo = styled(LogoChroma)`
 
 const Footer = ({ ...props }) => (
   <FooterWrapper {...props}>
-    <a href="http://nodesense.ai" target="_blank" rel="noopener noreferrer">
+    <a href="http://training.sh" target="_blank" rel="noopener noreferrer">
       <Logo />
     </a>
     <br />
     Made by{' '}
-    <FooterLink className="secondary" href="http://nodesense.ai" target="_blank">
-      NodeSense.AI
+    <FooterLink className="secondary" href="http://training.sh" target="_blank">
+      Training.SH
     </FooterLink>{' '}
     and <a href="https://in.linkedin.com/in/gopalakrishnansubramani">Gopalakrishnan Subramani</a>
   </FooterWrapper>
